@@ -1,0 +1,22 @@
+class Solution:
+    #Complete the below function
+    def search(self,arr, n, x):
+            #Your code here
+        for i in range(n):
+            if arr[i] == x:
+                return i
+        return -1
+            
+    
+if __name__=='__main__':
+    arr = [1, 2, 3, 4]
+    x = 3
+    n = len(arr)
+        
+    solution = Solution()
+    index = solution.search(arr,n,x)
+    if index != -1:
+        print("Element found at poisiton : " , str(index))
+            
+    else :
+        print("Element not found") 
