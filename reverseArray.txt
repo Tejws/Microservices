@@ -1,0 +1,32 @@
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+
+void reverseNum(int aru[],int n){
+    int start = 0;
+    int end = n-1;
+    
+    while(start<=end){
+       
+            swap(aru[start],aru[end]);
+            start++;
+            end--;
+        }
+    }
+
+
+void printNumber(int aru[],int n){
+    for(int i=0;i<n;i++){
+        cout<<aru[i]<<" ";
+        cout<<endl;
+    }
+}
+ 
+int main() {
+    int aru[4]={2,6,3,7};
+    
+    reverseNum(aru,4);
+    printNumber(aru,4);
+    
+    return 0;
+    }

@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+void reverseNum(int aru[],int size){
+    for(int i =0;i<size;i=i+2){
+        if(i+1<size){
+            swap(aru[i],aru[i+1]);
+        }
+    }
+    }
+
+
+void printNumber(int aru[],int n){
+    for(int i=0;i<n;i++){
+        cout<<aru[i]<<" ";
+        cout<<endl;
+    }
+}
+ 
+int main() {
+    int aru[6]={2,6,3,7,4,5};
+    
+    reverseNum(aru,6);
+    printNumber(aru,6);
+    
+    return 0;
+    }
+
