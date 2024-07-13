@@ -1,8 +1,2 @@
 # Microservices
 Mostly C# 
-
-
- 
- 
-  
- 
