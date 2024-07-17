@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+   char ch;
+   cout<<"Enter a Character : "<<endl;
+   cin>>ch;
+   if(ch > 96 && ch < 123){
+       cout<<"It is a lower case character"<<endl;
+   }
+   else if(ch > 64 && ch < 91 ){   
+       cout<<"It is a upper case character"<<endl;
+   }
+   else if(ch > 47 && ch < 58){
+       cout<<"It is a Number"<<endl;
+   }
+   else{
+       cout<<"It is a Symbol"<<endl;
+   }
+}
+// g
