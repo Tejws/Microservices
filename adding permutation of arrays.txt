@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int arraysum(int ar[],int n){
+    int sum;
+    for(int i=0;i<n;i++)
+    {
+         sum = sum+ ar[i];
+    }
+     return sum;
+}
+
+
+
+int main() {
+    int ar[100];
+    int size;
+    cout<<"Enter the size of Array : "<<endl;
+    cin>>size;
+    
+    cout<<"Enter the Numbers"<<endl;
+    for(int i=0;i<size;i++){
+        cin>>ar[i];
+    }
+    cout<<"SUM is " << arraysum(ar,size);
+}
