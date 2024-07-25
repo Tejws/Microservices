@@ -6,7 +6,7 @@ function reverse(num){
 
         num = Math.floor(num/10) //abhi num ko math.floor se number ko pointer mai laake phirse mod karne pe number nikal jayega
         
-    }
+    } 
     return rev;
 }
 console.log(reverse(21));
