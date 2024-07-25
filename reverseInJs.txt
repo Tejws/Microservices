@@ -1,0 +1,12 @@
+function reverse(num){
+    var rev = 0; // reverse set kiya hai 0
+    while(num>0){  //jab tak num zero se bada hai loop chalate raho
+        var rem = num%10;  // num ko 10 se mod karke last digit remainder mai save karo
+        rev = rev *10 + rem; // rev zero hai usko 10 se multiply karke remainder se plus karo aur rev mai save karo
+
+        num = Math.floor(num/10) //abhi num ko math.floor se number ko pointer mai laake phirse mod karne pe number nikal jayega
+        
+    }
+    return rev;
+}
+console.log(reverse(21));
